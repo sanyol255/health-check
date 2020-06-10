@@ -1,0 +1,35 @@
+body{
+    background-color: #fff0e6;
+    font-family: 'Lora', 'Bree Serif', serif;
+    font-size: 1em;
+}
+h1, h2{
+    text-align: center;
+}
+nav{
+    background-color: #009900;
+    height: 4em;
+    margin-bottom: 1em;
+}
+.navigation li{
+    list-style-type: none;
+    padding-top: 1em;
+}
+.navigation li a{
+    margin-left: 9em;
+    color: white;
+}
+li a:hover{
+    text-decoration: none;
+    color: orange;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #009900;
+    color: white;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    padding-top: .5em;
+}
