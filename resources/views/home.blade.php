@@ -1,0 +1,1 @@
+<h1>Вітаю на Health Check!</h1>
