@@ -9,7 +9,7 @@
 
  <p class="text-center h4 mb-3">Для визначення вашого ІМТ, заповніть будь-ласка форму:</p>
 
- {!! Form::open(['class' => 'text-center']) !!}
+ {!! Form::open(['route' => 'bmi.result', 'class' => 'text-center']) !!}
     <div>
         {!! Form::label('Ваше ім\'я: ', null, ['class' => 'col-md-3']) !!}
         {!! Form::text('name') !!}
@@ -17,12 +17,12 @@
     
     <div>
         {!! Form::label('Ваша вага (кг): ', null, ['class' => 'col-md-3']) !!}
-        {!! Form::number('name') !!}
+        {!! Form::number('weight') !!}
     </div>
 
     <div>
         {!! Form::label('Ваш зріст (см): ', null, ['class' => 'col-md-3'])!!}
-        {!! Form::number('name') !!}
+        {!! Form::number('height') !!}
     </div>
 
     <div>{!! Form::submit('Розрахувати ІМТ', ['class' => 'btn btn-success mt-3']) !!}</div>
