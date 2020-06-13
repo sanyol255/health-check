@@ -9,6 +9,10 @@
 
  <p class="text-center h4 mb-3">Для визначення вашого ІМТ, заповніть будь-ласка форму:</p>
 
+@if($errors->any())
+    {!! implode('', $errors->all('<div class="text-danger">:message</div>')) !!}
+@endif
+
  {!! Form::open(['route' => 'bmi.result', 'class' => 'text-center']) !!}
     <div>
         {!! Form::label('Ваше ім\'я: ', null, ['class' => 'col-md-3']) !!}
