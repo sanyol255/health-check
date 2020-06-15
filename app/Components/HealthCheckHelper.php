@@ -21,4 +21,28 @@ class HealthCheckHelper
 
         return [$bmi, $result];
     }
+
+    public static function ruffierResult($pulse)
+    {
+        $indexRuffier =  (4 * ($pulse[0] + $pulse[1] + $pulse[2]) - 200) / 10;
+
+        if($indexRuffier < 3){
+            $result = 'Хороша фізична працездатність';
+        }
+        else if($indexRuffier <= 6){
+            $result = 'Середня фізична працездатність';
+        }
+        else if($indexRuffier <= 9){
+            $result = 'Задовільна фізична працездатність';
+        }
+        else if($indexRuffier <= 14){
+            $result = 'Погана фізична працездатність - середня серцева недостатність';
+        }
+        else{
+            $result = 'Дуже погана фізична працездатність- сильна серцева недостатність';
+        }
+        return [$indexRuffier, $result];
+    }
+
+    
 }

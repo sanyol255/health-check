@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use Illuminate\Support\Facades\Validator;
-// use Session;
 use App\Components\HealthCheckHelper as HealthCheck;
 use App\Http\Requests\BmiCheckRequest;
 

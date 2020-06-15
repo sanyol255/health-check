@@ -25,8 +25,8 @@ class BmiCheckRequest extends FormRequest
     {
         return [
             'name' => 'required|alpha',
-            'height' => 'required|numeric|min:1',
-            'weight' => 'required|numeric|min:1'
+            'weight' => 'required|numeric|min:1',
+            'height' => 'required|numeric|min:1'
         ];
     }
 
@@ -34,11 +34,11 @@ class BmiCheckRequest extends FormRequest
     {
         return [
             'name.required' => 'Ім\'я є обов\'язковим полем для заповнення',
-            'height.required' => 'Зріст є обов\'язковим полем для заповнення',
             'weight.required' => 'Вага є обов\'язковим полем для заповнення',
+            'height.required' => 'Зріст є обов\'язковим полем для заповнення',
             'name.alpha' => 'Імя має складатись з одного слова',
-            'height.min' => 'Зріст не може бути нулем або від\'ємним значенням',
-            'weight.min' => 'Вага не може бути нулем або від\'ємним значенням'
+            'weight.min' => 'Вага не може бути нулем або від\'ємним значенням',
+            'height.min' => 'Зріст не може бути нулем або від\'ємним значенням'
         ];
     }
 }
