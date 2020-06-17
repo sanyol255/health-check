@@ -8,11 +8,7 @@
 при фізичній реабілітації для визначення рівня підготовки організму до фізичних навантажень.</p>
 
 <p class="text-center h4">Послідовність дій:</p>
-
-@if($errors->any())
-    {!! implode('', $errors->all('<div class="text-danger">:message</div>')) !!}
-@endif
-
+@include('partials.errors')
 {!! Form::open(['route' => 'ruffier-test.result']) !!}
 <ol>
     <li>Потрібно лягти на спину, та полежати в спокійному стані 5 хв</li>

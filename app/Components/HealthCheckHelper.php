@@ -44,5 +44,11 @@ class HealthCheckHelper
         return [$indexRuffier, $result];
     }
 
-    
+    public static function hypoxiaCheck($shtange, $genchi)
+    {
+        $shtangeResult = ($shtange < 30) ? 'Поганий' : ($shtange < 40 ? 'Середній' : (($shtange < 60) ? 'Хороший' : 'Відмінний'));
+        $genchiResult = ($genchi < 25) ? 'Поганий' : ($genchi < 30 ? 'Середній' : (($genchi < 40) ? 'Хороший' : 'Відмінний'));
+        
+        return [$shtangeResult, $genchiResult];
+    }   
 }
